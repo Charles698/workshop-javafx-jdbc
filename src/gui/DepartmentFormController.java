@@ -95,7 +95,7 @@ public class DepartmentFormController implements Initializable {
 		
 		if (txtName.getText() == null || txtName.getText().trim().equals("")) {
 			exception.addErrors("name", "Field can't be empty");
-		}
+		} 
 		obj.setName(txtName.getText());
 		
 		if (exception.getErrors().size() > 0) {
@@ -133,6 +133,6 @@ public class DepartmentFormController implements Initializable {
 		
 		if (fields.contains("name")) {
 			labelErrorName.setText(errors.get("name"));
-		}
-	}
+		} 
+	} 
 }
